@@ -37,8 +37,23 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--background);
+        background: var(--shape);
         -webkit-font-smoothing: antialiased;
+    }
+
+    body, input, textarea, button {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: var(--text-body);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        color: var(--text-title);
+    }
+
+    strong {
+        font-weight: 700;
     }
 
     button {
